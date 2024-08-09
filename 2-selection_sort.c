@@ -8,11 +8,12 @@ void selection_sort(int *array, size_t size)
 {
 	size_t r, s, min;
 	int tmp = 0;
-	
+
 	if (array == NULL)
-	{
 		return;
-	}
+	if (size < 1)
+		return;
+
 	for (r = 0; r < size - 1; r++)
 	{
 		min = r;
